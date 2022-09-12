@@ -1,0 +1,11 @@
+FROM python:3.8
+
+# Khai bao thu muc lam viec hien tai
+WORKDIR /home/duc/Desktop/docker/Example1
+
+RUN pip install numpy && pip install pandas
+# Copy toanf bo file vaof image
+COPY . ./code
+
+# Thuc hien lenh chay
+CMD ["python", "./code/Example1.py"]

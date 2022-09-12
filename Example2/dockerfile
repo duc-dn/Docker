@@ -1,0 +1,9 @@
+FROM python:3.8
+
+WORKDIR /home
+
+RUN pip install flask
+
+COPY Example2.py /home
+
+CMD ["python", "./Example2.py"]
